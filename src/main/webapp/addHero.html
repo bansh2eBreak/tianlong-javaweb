@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>添加英雄个人</title>
+</head>
+<body>
+<h3>添加英雄个人</h3>
+<form action="/tianlong/addHeroServlet" method="post">
+    <label>姓名:<input name="name" type="text">
+    </label><br>
+    <label>登录名:<input name="username" type="text">
+    </label><br>
+    <label>密码:<input name="password" type="password">
+    </label><br>
+    <label>代表功夫:<input name="kongfu" type="text">
+    </label><br>
+    <label>性别:<input name="gender" type="radio" value="1">
+        男
+        <input name="gender" type="radio" value="0">女</label><br>
+    <label>级别:
+        <input name="level" type="radio" value="1">王者
+        <input name="level" type="radio" value="2">钻石
+        <input name="level" type="radio" value="3">黄金
+        <input name="level" type="radio" value="4">白银
+        <input name="level" type="radio" value="5">青铜</label><br>
+    <label>出生日期:<input name="birthdate" type="date"></label><br>
+    <label>所属门派:
+        <input name="sectId" type="radio" value="1">大理段氏
+        <input name="sectId" type="radio" value="2">少林寺
+        <input name="sectId" type="radio" value="3">灵鹫宫
+        <input name="sectId" type="radio" value="4">丐帮
+        <input name="sectId" type="radio" value="5">一品堂
+        <input name="sectId" type="radio" value="6">逍遥派
+        <input name="sectId" type="radio" value="7">姑苏慕容</label><br><br>
+    <input type="submit" value="确认添加">
+</form>
+</body>
+</html>

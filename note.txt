@@ -1,0 +1,18 @@
+一、准备环境
+1、module模块的创建，并添加必要目录和maven依赖
+2、创建数据库表结构
+3、导入mybatis.xml核心配置文件
+4、准备项目结构和对应实体类
+5、三层架构的准备
+
+二、门派增删改查
+1、查询所有门派信息：
+   SelectAllSectsServlet -> SectService.selectAll() -> mapper.selectAll() -> db
+
+2、根据门派id查询门派：
+   SelectAllSectsServlet -> SectService.selectAll() -> mapper.selectAll() -> db
+
+1、查询所有门派信息：
+   SelectAllSectsServlet -> SectService.selectAll() -> mapper.selectAll() -> db
+
+三、用户登录
