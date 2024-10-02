@@ -56,7 +56,7 @@
     getOnlineUsersCount();
 
     // 每隔5秒更新在线人数
-    setInterval(getOnlineUsersCount, 1000);
+    setInterval(getOnlineUsersCount, 10000);
 
     document.getElementById("add").onclick=function (){
         location.href = "addSect.html";

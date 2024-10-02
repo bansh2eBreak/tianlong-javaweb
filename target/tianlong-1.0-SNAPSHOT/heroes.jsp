@@ -39,7 +39,7 @@
                 <td>男</td>
             </c:if>
             <%--<td>${hero.image}</td>--%>
-            <td><img src="${hero.image}" alt="None" style="max-width: 100px; max-height: 100px;"></td>
+            <td>${empty hero.image ? '空' : hero.image}</td>
             <c:if test="${hero.level == 1}">
                 <td>王者</td>
             </c:if>
@@ -102,7 +102,7 @@
     getOnlineUsersCount();
 
     // 每隔5秒更新在线人数
-    setInterval(getOnlineUsersCount, 1000);
+    setInterval(getOnlineUsersCount, 10000);
 
     document.getElementById("add").onclick=function (){
         location.href = "addHero.html";
