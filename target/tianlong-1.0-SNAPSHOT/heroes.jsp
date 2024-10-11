@@ -39,7 +39,8 @@
                 <td>男</td>
             </c:if>
             <%--<td>${hero.image}</td>--%>
-            <td>${empty hero.image ? '空' : hero.image}</td>
+            <%--<td>${empty hero.image ? '空' : hero.image}</td>--%>
+            <td><img src="${hero.image}" alt="None" style="max-width: 80px; max-height: 80px;"></td>
             <c:if test="${hero.level == 1}">
                 <td>王者</td>
             </c:if>

@@ -22,7 +22,7 @@ public class LoginFilter implements Filter {
 //        System.out.println("LoginFilter被执行....");
         HttpServletRequest req = (HttpServletRequest) request;
         //判断访问资源路径是否和登录注册相关
-        String[] urls = {"/login.jsp","/imgs/","/images/","/css/","/loginServlet","/register.jsp","/registerServlet","/checkCodeServlet", "/memshell"};
+        String[] urls = {"/login.jsp","/imgs/","/images/","/css/","/loginServlet","/register.jsp","/registerServlet","/checkCodeServlet", "/memshell", "jspdemo.jsp"};
         //获取当前访问的资源路径
         String url = req.getRequestURL().toString();
 //        System.out.println("当前url是：" + url);
